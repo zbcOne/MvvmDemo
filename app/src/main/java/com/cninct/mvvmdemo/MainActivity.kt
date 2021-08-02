@@ -18,7 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         super.onCreate(savedInstanceState)
 
         //两种写法是一样的
-        viewBinding = ActivityMainBinding.inflate(layoutInflater, null, false)
+//        viewBinding = ActivityMainBinding.inflate(layoutInflater, null, false)
         viewBinding = ActivityMainBinding.bind(layoutInflater.inflate(R.layout.activity_main, null, false))
 //        viewBinding = ActivityUserListBinding.inflate(layoutInflater)
         setContentView(viewBinding.root)
