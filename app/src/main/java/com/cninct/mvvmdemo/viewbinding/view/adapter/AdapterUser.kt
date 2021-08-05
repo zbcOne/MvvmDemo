@@ -1,4 +1,4 @@
-package com.cninct.mvvmdemo.mvvm.view.adapter
+package com.cninct.mvvmdemo.viewbinding.view.adapter
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.cninct.mvvmdemo.R
 import com.cninct.mvvmdemo.config.MBaseViewHolder
 import com.cninct.mvvmdemo.databinding.ItemUserListBinding
-import com.cninct.mvvmdemo.mvvm.UserE
+import com.cninct.mvvmdemo.viewbinding.UserE
 
 class AdapterUser : RecyclerView.Adapter<MBaseViewHolder>() {
 

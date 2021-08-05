@@ -3,11 +3,11 @@
 
     <data>
 
-        <import type="com.cninct.mvvmdemo.mvvm.UserE" />
+        <import type="com.cninct.mvvmdemo.viewbinding.UserE" />
 
         <variable
             name="user"
-            type="UserE" />
+            type="com.cninct.mvvmdemo.viewbinding.UserE" />
     </data>
 
     <LinearLayout

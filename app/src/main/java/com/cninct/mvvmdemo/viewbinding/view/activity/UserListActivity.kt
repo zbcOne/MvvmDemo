@@ -1,11 +1,10 @@
-package com.cninct.mvvmdemo.mvvm.view.activity
+package com.cninct.mvvmdemo.viewbinding.view.activity
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import com.cninct.mvvmdemo.R
 import com.cninct.mvvmdemo.databinding.ActivityUserListBinding
-import com.cninct.mvvmdemo.mvvm.UserE
-import com.cninct.mvvmdemo.mvvm.view.adapter.AdapterUser
+import com.cninct.mvvmdemo.viewbinding.UserE
+import com.cninct.mvvmdemo.viewbinding.view.adapter.AdapterUser
 
 class UserListActivity : AppCompatActivity() {
 
