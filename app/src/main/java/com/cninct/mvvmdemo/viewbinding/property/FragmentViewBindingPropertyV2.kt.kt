@@ -1,4 +1,4 @@
-package com.cninct.mvvmdemo.viewbinding.view.fragment
+package com.cninct.mvvmdemo.viewbinding.property
 
 import android.os.Handler
 import android.os.Looper

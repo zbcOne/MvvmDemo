@@ -1,4 +1,4 @@
-package com.cninct.mvvmdemo.viewbinding.view.fragment
+package com.cninct.mvvmdemo.viewbinding.property
 
 import android.os.Handler
 import android.os.Looper
@@ -18,15 +18,15 @@ private const val TAG = "ViewBindingProperty"
 
 inline fun <reified V : ViewBinding> viewBindingV1() = viewBindingV1(V::class.java)
 
-inline fun <reified T : ViewBinding> viewBindingV1(clazz: Class<T>): FragmentViewBindingProperty<Fragment, T> {
+inline fun <reified T : ViewBinding> viewBindingV1(clazz: Class<T>): FragmentViewBindingPropertyV1<Fragment, T> {
     //通过反射拿到自动生成的ViewBinding类里面的bind方法，bind方法是生成对应ViewBinding对象
     val bindMethod = clazz.getMethod("bind", View::class.java)
-    return FragmentViewBindingProperty {
+    return FragmentViewBindingPropertyV1 {
         bindMethod(null, it.requireView()) as T
     }
 }
 
-class FragmentViewBindingProperty<in F : Fragment, out V : ViewBinding>(private val viewBinder: (F) -> V) :
+class FragmentViewBindingPropertyV1<in F : Fragment, out V : ViewBinding>(private val viewBinder: (F) -> V) :
     ReadOnlyProperty<F, V> {
 
     private var viewBinding: V? = null

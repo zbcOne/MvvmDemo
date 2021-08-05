@@ -5,6 +5,7 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import com.cninct.mvvmdemo.R
 import com.cninct.mvvmdemo.databinding.FragmentTest2Binding
+import com.cninct.mvvmdemo.viewbinding.property.viewBindingV2
 
 class Test2Fragment : Fragment(R.layout.fragment_test2) {
 
