@@ -1,10 +1,11 @@
 package com.cninct.mvvmdemo
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
 import com.cninct.mvvmdemo.databinding.ActivityMainBinding
+import com.cninct.mvvmdemo.livedata.LiveDataTestActivity
 import com.cninct.mvvmdemo.viewbinding.view.activity.FragmentActivity
 import com.cninct.mvvmdemo.viewbinding.view.activity.UserListActivity
 
@@ -24,6 +25,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         viewBinding.btnUserList.setOnClickListener(this)
         viewBinding.btnFragmentTest.setOnClickListener(this)
+        viewBinding.btnLiveData.setOnClickListener(this)
     }
 
     override fun onClick(view: View?) {
@@ -33,6 +35,9 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             }
             R.id.btnFragmentTest -> {
                 startActivity(Intent(this, FragmentActivity::class.java))
+            }
+            R.id.btnLiveData -> {
+                startActivity(Intent(this, LiveDataTestActivity::class.java))
             }
         }
     }
