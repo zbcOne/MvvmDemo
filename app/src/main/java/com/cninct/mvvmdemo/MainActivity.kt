@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.view.View
 import androidx.appcompat.app.AppCompatActivity
 import com.cninct.mvvmdemo.databinding.ActivityMainBinding
-import com.cninct.mvvmdemo.livedata.LiveDataTestActivity
+import com.cninct.mvvmdemo.livedata.view.activity.LiveDataTestActivity
 import com.cninct.mvvmdemo.viewbinding.view.activity.FragmentActivity
 import com.cninct.mvvmdemo.viewbinding.view.activity.UserListActivity
 

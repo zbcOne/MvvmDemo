@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".livedata.LiveDataTestActivity"></activity>
+        <activity android:name=".livedata.view.activity.LiveDataTestActivity" />
         <activity android:name=".viewbinding.view.activity.FragmentActivity" />
         <activity android:name=".viewbinding.view.activity.UserListActivity" />
         <activity android:name=".MainActivity">

@@ -1,11 +1,12 @@
-package com.cninct.mvvmdemo.livedata
+package com.cninct.mvvmdemo.livedata.view.activity
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.MutableLiveData
-import com.cninct.mvvmdemo.R
+import androidx.lifecycle.ViewModelProvider
 import com.cninct.mvvmdemo.databinding.ActivityLiveDataTestBinding
+import com.cninct.mvvmdemo.livedata.model.CountDownModel
 
 class LiveDataTestActivity : AppCompatActivity() {
 
@@ -22,6 +23,11 @@ class LiveDataTestActivity : AppCompatActivity() {
         liveData.observe(this, {
             binding.dataValue = it
             Log.e("zz", "单独使用LiveData ==> $it")
+        })
+
+        val countDownModel: CountDownModel = ViewModelProvider(this).get(CountDownModel::class.java)
+        countDownModel.countDownLiveData.observe(this, {
+            binding.tvCountDown.text = it
         })
     }
 
